@@ -1,41 +1,54 @@
-# HTML Hello
+# molicgv.art
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Portfolio artístico personal de Mónica Gómez, artista que explora la pintura acrílica texturizada inspirada en el mar, el movimiento del agua y los paisajes marinos.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+El sitio presenta una selección de obras, una introducción a la artista, su proceso creativo y sus canales de contacto. Su propósito es ofrecer una presencia digital clara y accesible para su trabajo artístico, sin atribuirle una trayectoria, exposiciones ni datos que no estén confirmados.
 
-## What to do next?
+## Tecnologías y características
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+- HTML5 semántico y CSS3; no utiliza JavaScript, frameworks ni dependencias de ejecución.
+- Diseño adaptable a móvil y escritorio.
+- Accesibilidad: navegación semántica, enlace para saltar al contenido, foco visible y textos alternativos para las imágenes.
+- Metadatos SEO y Microdata de Schema.org para la artista y las obras representadas.
+- Fotografías JPEG originales con variantes WebP responsive y fallback JPEG.
+- La página conserva `noindex, nofollow` porque la publicación definitiva aún no se ha realizado.
 
-```bash
-$ pip3 install flask && python3 server.py
+## Estructura
+
+```text
+.
+├── index.html                 # Contenido, navegación, metadatos y Microdata
+├── styles.css                 # Presentación adaptable y accesible
+├── assets/images/             # Fotografías originales y variantes WebP
+├── AGENTS.md                  # Reglas para continuar el desarrollo
+├── specs/                     # Especificación, plan y tareas SDD
+├── data/artist.json           # Referencia opcional; no se carga en la web
+└── .vscode/settings.json      # Preferencias locales del editor
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+## Visualización local
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+Abre `index.html` directamente en un navegador. La hoja de estilos y las imágenes usan rutas relativas, por lo que no se necesita instalar paquetes ni iniciar un servidor.
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+## Contacto
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+- Instagram: [@molicgv.art](https://www.instagram.com/molicgv.art/?hl=es)
+- TikTok: [@molicgv.art](https://www.tiktok.com/@molicgv.art)
+- Correo: [molicgv.art@gmail.com](mailto:molicgv.art@gmail.com)
 
-### Contributors
+## Estado
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+El portfolio está implementado como sitio estático y aún no se ha publicado en el dominio definitivo. RUST continúa en desarrollo y actualmente no hay exposiciones programadas.
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+## Mejoras futuras
+
+- Crear `docs/MAINTENANCE.md` una vez finalizada la limpieza de la estructura, con procedimientos para editar contenido, imágenes, CSS, Git y publicación.
+- Revisar manualmente la experiencia responsive, el recorrido con teclado y tecnologías de asistencia.
+- Publicar el sitio y revisar la política de indexación cuando el dominio definitivo esté listo.
+- Incorporar nuevas obras únicamente cuando se disponga de contenido e imágenes confirmados.
+
+## Créditos y atribuciones
+
+Este repositorio nació como un ejercicio de 4Geeks Academy y posteriormente fue adaptado como portfolio artístico personal. La plantilla HTML Hello original atribuye su creación a Alejandro Sánchez y a otros colaboradores de 4Geeks Academy; se conserva esta referencia como crédito al origen del proyecto.
+
+Los iconos SVG de Instagram y TikTok proceden de Font Awesome Free Brands y se mantienen bajo [CC BY 4.0](https://fontawesome.com/license/free). La atribución también se conserva junto a los iconos en `index.html`.

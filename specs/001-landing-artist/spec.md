@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Transformar la landing existente en el portfolio artístico real de molicgv.art, nombre artístico de Mónica Gómez, artista emergente especializada en pintura acrílica texturizada inspirada en el mar, las olas, los paisajes costeros y las texturas naturales.
+Mantener un portfolio artístico personal e independiente para molicgv.art, nombre artístico de Mónica Gómez, artista emergente especializada en pintura acrílica texturizada inspirada en el mar, las olas, los paisajes costeros y las texturas naturales. El repositorio conserva su historial y su origen académico se documenta como crédito, no como identidad actual del proyecto.
 
 ## Alcance
 
@@ -30,9 +30,10 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 ## Tecnologías y organización de datos
 
 - La web usa exclusivamente HTML5 y CSS3. No se usan JavaScript, `fetch()`, Flask/Jinja para renderizado, frameworks, bibliotecas externas ni herramientas de generación.
-- `server.py` solo puede usarse para previsualizar durante el desarrollo, nunca como dependencia de renderizado.
+- La web se previsualiza abriendo `index.html` en un navegador; no requiere servidor ni dependencias de renderizado.
 - Flexbox se usa para composición y navegación; CSS Grid puede usarse para la galería si aporta una distribución clara.
 - La web no depende de `data/artist.json`; si se actualiza más adelante, se hará manualmente como referencia, sin alterar la arquitectura ni bloquear el sitio.
+- Si las restricciones del editor impiden inspeccionar `data/artist.json`, no se intentará eludirlas; su revisión queda manual y pendiente.
 
 ## Contenido confirmado del portfolio
 
@@ -83,6 +84,7 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 - El contenido usará encabezados descriptivos y lenguaje claro, específico y verificable, sin acumulación artificial de palabras clave.
 - El nombre artístico, el nombre de la artista, la especialidad y los enlaces serán consistentes en todos los elementos visibles y metadatos.
 - No se añadirá canonical hasta confirmar el dominio público. Se mantendrá el `noindex` que ya existe en la página; cambiar esa política requiere consultar a la artista.
+- El dominio definitivo todavía no está publicado; conservar `noindex, nofollow`.
 - Las secciones y contenidos importantes serán accesibles mediante enlaces HTML normales.
 
 ## Datos estructurados
@@ -92,6 +94,11 @@ La navegación incluirá Inicio, Sobre mí, Trayectoria y Próximas presentacion
 - La especialidad artística se representa mediante `knowsAbout`; `jobTitle` se reserva para una ocupación expresada como puesto profesional.
 - La propiedad `Person.name` contiene únicamente el nombre «Mónica Gómez», sin saludos ni texto editorial.
 - Los datos estructurados deben coincidir con el contenido visible y no incluir títulos, fechas, dimensiones ni otras afirmaciones no confirmadas.
+
+## Documentación de mantenimiento
+
+- Después de estabilizar la estructura tras la limpieza, crear `docs/MAINTENANCE.md` para documentar cómo abrir la web, editar textos, añadir obras, actualizar fotografías, mantener CSS, usar Git y publicar.
+- Hasta entonces, la guía es una tarea futura y no debe presentarse como existente.
 
 ## Criterios de aceptación
 

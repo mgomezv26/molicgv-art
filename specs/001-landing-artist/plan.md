@@ -1,7 +1,7 @@
 
 ## Objetivo
 
-Transformar el proyecto existente de landing en el portfolio artístico de Mónica Gómez, nombre artístico molicgv.art, sin empezar desde cero y manteniendo las restricciones de 4Geeks.
+Mantener y evolucionar el portfolio artístico personal de Mónica Gómez, cuyo nombre artístico es molicgv.art, partiendo de la landing existente y conservando su historial Git.
 
 ## Archivos autorizados
 
@@ -9,20 +9,21 @@ Transformar el proyecto existente de landing en el portfolio artístico de Móni
 - `specs/001-landing-artist/spec.md`: requisitos, contenido confirmado, recursos y criterios de aceptación.
 - `specs/001-landing-artist/plan.md`: este plan de implementación.
 - `specs/001-landing-artist/tasks.md`: tareas en orden y su estado.
-- `data/artist.json`: referencia opcional, no fuente de verdad ni dependencia funcional; no se modifica ni se carga desde la web en esta implementación.
+- `data/artist.json`: referencia opcional, no fuente de verdad ni dependencia funcional; no se carga desde la web. Su contenido queda pendiente de revisión manual si el editor no permite inspeccionarlo.
 - `index.html`: contenido visible, navegación, fotografías, metadatos y Microdata.
 - `styles.css`: identidad «Galería marina», composición, responsive, foco y movimiento reducido.
 
-No modificar `assets/images/*`, `server.py`, `README*` ni otros archivos. No hacer commits ni pushes.
+Conservar `assets/images/*` sin modificaciones. No hacer commits ni pushes. La limpieza del README y de los artefactos del ejercicio está autorizada por la propietaria del repositorio.
 
 ## Fases
 
-1. **Documentación SDD:** adaptar AGENTS, spec, plan y tasks a la identidad real, los datos confirmados, la distribución de fotos y las políticas de indexación.
+1. **Documentación SDD:** mantener AGENTS, spec, plan y tasks alineados con la identidad real, los datos confirmados, la distribución de fotos y las políticas de indexación.
 2. **Contenido:** usar `index.html` como única fuente funcional. La actualización futura de `data/artist.json` es opcional, manual y no bloqueante; el sitio nunca lo carga ni lo procesa.
 3. **HTML:** sustituir la identidad de la demo anterior por el portfolio en `index.html`: skip link, navegación por anclas, hero con `portada.jpeg`, Sobre mí con `MG.jpg`, galería con el tríptico y `playa.jpeg`, proceso con `textura-detalle_2.jpg`, mensaje de eventos y footer con enlaces de contacto.
 4. **Microdata y SEO:** marcar solo datos reales y visibles con Microdata Schema.org. Actualizar title y description; no añadir canonical y conservar el `noindex` actual hasta autorización expresa.
 5. **CSS:** implementar la paleta marina en variables `:root`, tipografía local, galería responsive, imágenes sin distorsión, espaciado editorial, hovers discretos, foco visible y `prefers-reduced-motion`.
-6. **Validación:** comprobar que el HTML es autocontenido, enlaces, rutas y carga de imágenes WebP/JPEG, estructura y Microdata, navegación por teclado, contraste y responsive en tamaños móvil, tablet y escritorio. No comparar ni cargar el JSON. No instalar dependencias; usar `server.py` solo si ya puede arrancar, sin convertirlo en dependencia.
+6. **Validación:** comprobar que el HTML es autocontenido, enlaces, rutas y carga de imágenes WebP/JPEG, estructura y Microdata, navegación por teclado, contraste y responsive en tamaños móvil, tablet y escritorio. No comparar ni cargar el JSON. No instalar dependencias; abre `index.html` directamente para previsualizar.
+7. **Mantenimiento futuro:** después de estabilizar la estructura del repositorio, crear `docs/MAINTENANCE.md` con los procedimientos de edición, fotografías, CSS, Git y publicación. Esta guía todavía no está redactada.
 
 ## Datos y límites
 
@@ -41,5 +42,5 @@ La página muestra exclusivamente contenido aprobado, las cinco fotos tienen Web
 - Implementado: diez derivados WebP responsive, `<picture>`/`srcset`/`sizes`, JPEG fallback, prioridad de carga del hero y lazy loading bajo el contenido inicial.
 - Implementado: Microdata con `knowsAbout` para la especialidad y sin `jobTitle` ni `artform` oculto.
 - Verificado automáticamente: decodificación de variantes, dimensiones/proporciones, rutas, anclas internas, JPEG fallbacks, `alt`, dimensiones HTML, un H1, Microdata básico, `noindex` y ausencia de JavaScript/canonical.
-- Hallazgo pendiente: `Person.name` toma el texto completo «Hola, soy Mónica Gómez.»; corregirlo a «Mónica Gómez» requiere una modificación HTML posterior.
+- Corregido en esta transición: `Person.name` contiene únicamente «Mónica Gómez»; el saludo sigue siendo texto visible fuera de esa propiedad.
 - Pendiente de revisión manual: recorrido con teclado/lector de pantalla, inspección visual en móvil/tablet/escritorio y respuesta HTTP de los enlaces externos. La vista previa se abrió localmente, pero no se generaron capturas de viewport.

@@ -8,10 +8,10 @@ Mantener un portfolio personal real para molicgv.art, nombre artístico de Móni
 
 - Usa HTML5 semántico y CSS3 en un archivo separado.
 - Escribe directamente en `index.html` todo el contenido visible; este HTML es la fuente de contenido de la web.
-- `data/artist.json`, si existe, es únicamente una referencia opcional. No lo cargues ni lo proceses desde la web, y su actualización no bloquea la implementación.
+- `data/artist.json`, si existe, es únicamente una referencia opcional. No lo cargues ni lo proceses desde la web, y su actualización no bloquea la implementación. Si no se puede inspeccionar por restricciones del editor, no intentes eludirlas; déjalo pendiente de revisión manual.
 - Usa HTML5 semántico y CSS3, con Flexbox y CSS Grid cuando cada uno resulte adecuado.
 - La web debe usar exclusivamente HTML5 y CSS3. No uses JavaScript, `fetch()`, Flask/Jinja para renderizar, frameworks, bibliotecas externas ni herramientas de generación o compilación.
-- `server.py` puede utilizarse únicamente para previsualizar la web durante el desarrollo; no debe ser una dependencia de renderizado.
+- Para previsualizar la web, abre `index.html` en un navegador. No añadas servidores ni dependencias para renderizarla.
 - Mantén el código claro, conciso y fácil de mantener.
 - No añadas dependencias ni herramientas de compilación sin autorización.
 - No bloquees la implementación ni intentes eludir restricciones de acceso del editor por un JSON de referencia inaccesible.
@@ -61,6 +61,11 @@ Mantener un portfolio personal real para molicgv.art, nombre artístico de Móni
 - Representa únicamente información real y visible en la página.
 - Elige tipos adecuados al contenido, como `Person`, `VisualArtwork` o `WebSite`, y usa propiedades pertinentes.
 - No inventes identificadores, fechas, premios, ubicaciones ni perfiles sociales.
+
+## Documentación de mantenimiento
+
+- `docs/MAINTENANCE.md` está pendiente de creación después de estabilizar la estructura del proyecto.
+- Cuando exista, refleja en esa guía cualquier cambio futuro que afecte a los procedimientos de mantenimiento, edición de contenido, fotografías, CSS, Git o publicación.
 
 ## Verificación
 
