@@ -40,4 +40,4 @@
 - [x] 26. Retirar los README heredados, `learn.json`, `server.py` y el recurso demostrativo autorizado, preservando las fotos y sus variantes.
 - [x] 27. Verificar estado Git, archivos conservados, rutas de HTML/CSS e imágenes, dependencias, atribuciones y ausencia de datos ficticios como contenido actual.
 - [ ] 28. Revisar manualmente `data/artist.json` si el editor permite su acceso; no eludir restricciones.
-- [ ] 29. Crear `docs/MAINTENANCE.md` después de cerrar la limpieza y estabilizar la estructura del proyecto.
+- [x] 29. Crear y verificar `docs/MAINTENANCE.md` con procedimientos de ejecución, edición, validación, Git y publicación.

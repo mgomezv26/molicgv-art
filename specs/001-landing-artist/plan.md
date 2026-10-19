@@ -23,7 +23,7 @@ Conservar `assets/images/*` sin modificaciones. No hacer commits ni pushes. La l
 4. **Microdata y SEO:** marcar solo datos reales y visibles con Microdata Schema.org. Actualizar title y description; no añadir canonical y conservar el `noindex` actual hasta autorización expresa.
 5. **CSS:** implementar la paleta marina en variables `:root`, tipografía local, galería responsive, imágenes sin distorsión, espaciado editorial, hovers discretos, foco visible y `prefers-reduced-motion`.
 6. **Validación:** comprobar que el HTML es autocontenido, enlaces, rutas y carga de imágenes WebP/JPEG, estructura y Microdata, navegación por teclado, contraste y responsive en tamaños móvil, tablet y escritorio. No comparar ni cargar el JSON. No instalar dependencias; abre `index.html` directamente para previsualizar.
-7. **Mantenimiento futuro:** después de estabilizar la estructura del repositorio, crear `docs/MAINTENANCE.md` con los procedimientos de edición, fotografías, CSS, Git y publicación. Esta guía todavía no está redactada.
+7. **Mantenimiento:** documentar en `docs/MAINTENANCE.md` cómo ejecutar, editar, validar y publicar el portfolio; actualizarla cuando cambien esos procedimientos.
 
 ## Datos y límites
 

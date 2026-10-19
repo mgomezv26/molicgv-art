@@ -22,13 +22,13 @@ El sitio presenta una selección de obras, una introducción a la artista, su pr
 ├── assets/images/             # Fotografías originales y variantes WebP
 ├── AGENTS.md                  # Reglas para continuar el desarrollo
 ├── specs/                     # Especificación, plan y tareas SDD
-├── data/artist.json           # Referencia opcional; no se carga en la web
+├── docs/MAINTENANCE.md        # Manual de uso, edición, validación y publicación
 └── .vscode/settings.json      # Preferencias locales del editor
 ```
 
 ## Visualización local
 
-Abre `index.html` directamente en un navegador. La hoja de estilos y las imágenes usan rutas relativas, por lo que no se necesita instalar paquetes ni iniciar un servidor.
+Abre `index.html` directamente en un navegador o sigue la [guía de mantenimiento](docs/MAINTENANCE.md) para usar el servidor HTTP estático integrado en Python. La hoja de estilos y las imágenes usan rutas relativas; no se instalan paquetes.
 
 ## Contacto
 
@@ -42,7 +42,6 @@ El portfolio está implementado como sitio estático y aún no se ha publicado e
 
 ## Mejoras futuras
 
-- Crear `docs/MAINTENANCE.md` una vez finalizada la limpieza de la estructura, con procedimientos para editar contenido, imágenes, CSS, Git y publicación.
 - Revisar manualmente la experiencia responsive, el recorrido con teclado y tecnologías de asistencia.
 - Publicar el sitio y revisar la política de indexación cuando el dominio definitivo esté listo.
 - Incorporar nuevas obras únicamente cuando se disponga de contenido e imágenes confirmados.

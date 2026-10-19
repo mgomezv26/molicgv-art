@@ -11,7 +11,7 @@ Mantener un portfolio personal real para molicgv.art, nombre artístico de Móni
 - `data/artist.json`, si existe, es únicamente una referencia opcional. No lo cargues ni lo proceses desde la web, y su actualización no bloquea la implementación. Si no se puede inspeccionar por restricciones del editor, no intentes eludirlas; déjalo pendiente de revisión manual.
 - Usa HTML5 semántico y CSS3, con Flexbox y CSS Grid cuando cada uno resulte adecuado.
 - La web debe usar exclusivamente HTML5 y CSS3. No uses JavaScript, `fetch()`, Flask/Jinja para renderizar, frameworks, bibliotecas externas ni herramientas de generación o compilación.
-- Para previsualizar la web, abre `index.html` en un navegador. No añadas servidores ni dependencias para renderizarla.
+- Para previsualizar la web, abre `index.html` en un navegador o utiliza temporalmente el módulo estándar `http.server` de Python según `docs/MAINTENANCE.md`. No añadas servidores ni dependencias al proyecto.
 - Mantén el código claro, conciso y fácil de mantener.
 - No añadas dependencias ni herramientas de compilación sin autorización.
 - No bloquees la implementación ni intentes eludir restricciones de acceso del editor por un JSON de referencia inaccesible.
@@ -64,8 +64,8 @@ Mantener un portfolio personal real para molicgv.art, nombre artístico de Móni
 
 ## Documentación de mantenimiento
 
-- `docs/MAINTENANCE.md` está pendiente de creación después de estabilizar la estructura del proyecto.
-- Cuando exista, refleja en esa guía cualquier cambio futuro que afecte a los procedimientos de mantenimiento, edición de contenido, fotografías, CSS, Git o publicación.
+- Consulta `docs/MAINTENANCE.md` cuando una tarea afecte a los procedimientos de ejecución local, edición de contenido, fotografías, CSS, Git o publicación.
+- Si cambian esos procedimientos, actualiza también la guía para que siga coincidiendo con la estructura y el flujo reales del proyecto.
 
 ## Verificación
 
